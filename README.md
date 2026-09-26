@@ -3,6 +3,7 @@
 Ein modernes Memory-Spiel im Browser – mit Vorschau-Phase, 3D-Flip-Animationen,
 Timer, Fehlerzähler und Konfetti beim Gewinnen. Gebaut mit reinem **HTML, CSS und JavaScript**
 (keine Bibliotheken, kein Build-Tool nötig).
+[![Live Demo](https://img.shields.io/badge/🎮_Live_Demo-Jetzt_spielen!-brightgreen?style=for-the-badge)](https://memory-match-cards.netlify.app)
 
 ![Status](https://img.shields.io/badge/status-fertig-brightgreen)
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
