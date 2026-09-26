@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Match</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>MEMORY MATCH</h1>
+  <p class="subtitle" id="subtitle">Präge dir die Karten ein!</p>
+
+  <div class="hud">
+    <div class="stat">Zeit<span id="time">0s</span></div>
+    <div class="stat">Züge<span id="moves">0</span></div>
+    <div class="stat">Fehler<span id="errors">0</span></div>
+    <div class="stat">Paare<span id="pairs">0/10</span></div>
+  </div>
+
+  <div id="board">
+    <div class="progress-bar" id="progressBar"></div>
+  </div>
+
+  <div class="preview-banner" id="previewBanner">
+    👀 Einprägen... <span id="countdown">3</span>s
+  </div>
+
+  <div class="controls">
+    <select id="difficulty">
+      <option value="5000">😌 Einfach (5s Vorschau)</option>
+      <option value="3000" selected>🙂 Normal (3s Vorschau)</option>
+      <option value="1500">😈 Schwer (1,5s Vorschau)</option>
+    </select>
+    <button id="newGameBtn">🔄 Neues Spiel</button>
+  </div>
+
+  <div class="overlay" id="overlay">
+    <div class="overlay-card">
+      <h2>🎉 Gewonnen!</h2>
+      <p>Du hast alle Paare gefunden.</p>
+      <div class="big" id="finalStats"></div>
+      <button id="playAgainBtn">Nochmal spielen</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
