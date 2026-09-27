@@ -92,6 +92,7 @@ In index.html bei den <option>-Werten (in Millisekunden):
 □ 🌐 Mehrsprachigkeit – Deutsch / Englisch
 
 ##🙏 Danksagungen
+
 Inspiration: klassisches Memory / Concentration (seit 1959)
 
 Design-Ideen: Glassmorphism-Trend, moderne Web-Apps
@@ -99,6 +100,7 @@ Design-Ideen: Glassmorphism-Trend, moderne Web-Apps
 Emojis: Unicode-Standard
 
 ##👤 Autor
+
 Erstellt mit ❤️ als modernes Beispiel für ein Browser-Memory-Spiel.
 
 Wenn dir das Spiel gefällt, gib dem Projekt gerne einen ⭐ auf GitHub!
