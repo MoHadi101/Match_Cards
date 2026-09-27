@@ -1,105 +1,147 @@
 # 🎴 Memory Match
 
-Ein modernes Memory-Spiel im Browser – mit Vorschau-Phase, 3D-Flip-Animationen,
-Timer, Fehlerzähler und Konfetti beim Gewinnen. Gebaut mit reinem **HTML, CSS und JavaScript**
-(keine Bibliotheken, kein Build-Tool nötig).
+Ein modernes Memory-Spiel im Browser – mit Vorschau-Phase, 3D-Flip-Animationen, Timer, Fehlerzähler und Konfetti beim Gewinnen.
 
+Gebaut mit reinem **HTML, CSS und JavaScript** – keine Bibliotheken und kein Build-Tool erforderlich.
 
 ![Status](https://img.shields.io/badge/status-fertig-brightgreen)
-![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
-![JS](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5\&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?logo=css3\&logoColor=white)
+![JS](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript\&logoColor=black)
 [![Live Demo](https://img.shields.io/badge/🎮_Live_Demo-Jetzt_spielen!-brightgreen?style=for-the-badge)](https://memory-match-cards.netlify.app)
 
 ---
 
 ## ✨ Features
 
-- 👀 **Vorschau-Phase** – Alle Karten werden kurz aufgedeckt, damit du sie dir einprägen kannst
-- 🎚️ **3 Schwierigkeitsgrade** – Einfach (5s), Normal (3s), Schwer (1,5s)
-- 🎬 **3D-Flip-Animationen** – Karten drehen sich realistisch um
-- ⏱️ **Timer, Züge- & Fehlerzähler** – Live in der Statusleiste
-- 🏆 **Gewinn-Overlay mit Konfetti** – Plus Statistik am Ende
-- 📱 **Responsive** – Funktioniert auf Desktop, Tablet und Handy
-- 🎨 **Modernes Glassmorphism-Design** – Dunkler Farbverlauf, verschwommene Panels
-- 🧠 **Faires Spielprinzip** – Kein Schummeln möglich während der Vorschau
-- 🚫 **Keine externen Abhängigkeiten** – Kein CDN, keine Bilder, keine Fonts nötig
+* 👀 **Vorschau-Phase** – Alle Karten werden kurz aufgedeckt, damit du sie dir einprägen kannst.
+* 🎚️ **3 Schwierigkeitsgrade** – Einfach (5 s), Normal (3 s), Schwer (1,5 s).
+* 🎬 **3D-Flip-Animationen** – Die Karten drehen sich realistisch um.
+* ⏱️ **Timer, Züge- & Fehlerzähler** – Alles wird live in der Statusleiste angezeigt.
+* 🏆 **Gewinn-Overlay mit Konfetti** – Inklusive Statistik am Ende des Spiels.
+* 📱 **Responsive** – Funktioniert auf Desktop, Tablet und Smartphone.
+* 🎨 **Modernes Glassmorphism-Design** – Dunkler Farbverlauf mit verschwommenen Panels.
+* 🧠 **Faires Spielprinzip** – Während der Vorschau können keine Karten ausgewählt werden.
+* 🚫 **Keine externen Abhängigkeiten** – Kein CDN, keine Bilder und keine Fonts erforderlich.
 
 ---
 
 ## 🎮 Spielanleitung
-Spiel starten – Beim Laden wird automatisch ein neues Spiel erstellt.
 
-Vorschau-Phase – Alle 20 Karten werden für ein paar Sekunden aufgedeckt.
-Ein Banner oben zeigt den Countdown, ein Balken unten den Fortschritt.
+**Spiel starten**
+Beim Laden wird automatisch ein neues Spiel erstellt.
 
-Karten drehen sich um – Nach Ablauf der Vorschau werden alle Karten verdeckt.
+**Vorschau-Phase**
+Alle 20 Karten werden für einige Sekunden aufgedeckt. Ein Banner oben zeigt den Countdown, während ein Balken unten den Fortschritt anzeigt.
 
-Jetzt spielen! – Klicke zwei Karten an:
+**Karten drehen sich um**
+Nach Ablauf der Vorschau werden alle Karten wieder verdeckt.
 
-✅ Gleiche Symbole → sie bleiben offen (grün markiert)
+**Jetzt spielen!**
+Klicke nacheinander auf zwei Karten:
 
-❌ Unterschiedliche Symbole → sie drehen sich nach 0,9s zurück (Fehler +1)
+* ✅ **Gleiche Symbole** → Die Karten bleiben offen und werden grün markiert.
+* ❌ **Unterschiedliche Symbole** → Die Karten drehen sich nach 0,9 Sekunden wieder zurück und der Fehlerzähler wird um 1 erhöht.
 
-Gewinnen – Sobald alle 10 Paare gefunden sind, erscheint ein Konfetti-Regen
-mit deiner Statistik (Zeit, Züge, Fehler).
+**Gewinnen**
+Sobald alle 10 Paare gefunden wurden, erscheint ein Konfetti-Regen mit deiner Statistik:
+
+* ⏱️ Zeit
+* 🔄 Züge
+* ❌ Fehler
+
+---
 
 ## 🎚️ Schwierigkeitsgrade
-😌 Einfach ->	5 Sekunden ->	Anfänger, Kinder
-🙂 Normal -> 3 Sekunden	-> Standard / Klassisch
-😈 Schwer -> 	1,5 Sekunden ->	Profis & Gedächtniskünstler
 
-💡 Die Auswahl wird beim Klick auf 🔄 Neues Spiel übernommen.
+| Schwierigkeit | Vorschauzeit | Geeignet für                |
+| ------------- | -----------: | --------------------------- |
+| 😌 Einfach    |   5 Sekunden | Anfänger & Kinder           |
+| 🙂 Normal     |   3 Sekunden | Standard / Klassisch        |
+| 😈 Schwer     | 1,5 Sekunden | Profis & Gedächtniskünstler |
+
+💡 Die Auswahl wird beim Klick auf **🔄 Neues Spiel** übernommen.
+
+---
 
 ## 🎨 Anpassungen
-Andere Symbole verwenden
-In script.js oben die ICONS-Liste ändern:
-const ICONS = ["🍎","🍌","🍇","🍒","🍓","🥝","🍑","🍍","🥥","🍉"];
-⚠️ Es müssen 10 verschiedene Symbole sein, weil das Board 4×5 = 20 Karten hat (= 10 Paare).
 
-Board-Größe ändern
-Für ein kleineres Spielfeld z. B. 4×4 = 16 Karten (= 8 Paare):
-const ICONS = ["🔥","💧","⚡","🌿","❄️","🌙","⭐","💎"]; // 8 Stück
+### Andere Symbole verwenden
+
+In `script.js` kann oben die `ICONS`-Liste geändert werden:
+
+```javascript
+const ICONS = ["🍎", "🍌", "🍇", "🍒", "🍓", "🥝", "🍑", "🍍", "🥥", "🍉"];
+```
+
+⚠️ Es müssen **10 verschiedene Symbole** sein, da das Board aus **4 × 5 = 20 Karten** besteht und somit **10 Paare** benötigt.
+
+### Board-Größe ändern
+
+Für ein kleineres Spielfeld mit **4 × 4 = 16 Karten** (= 8 Paare):
+
+```javascript
+const ICONS = ["🔥", "💧", "⚡", "🌿", "❄️", "🌙", "⭐", "💎"]; // 8 Stück
 const ROWS = 4;
 const COLS = 4;
-Und in style.css:
+```
+
+Anschließend muss in `style.css` das Grid angepasst werden:
+
+```css
 #board {
   grid-template-columns: repeat(4, 1fr);
 }
-Farben anpassen
-In style.css die Farbverläufe ändern, z. B.:
+```
 
+### Farben anpassen
 
+In `style.css` können die Farbverläufe geändert werden, zum Beispiel:
+
+```css
 body {
   background: linear-gradient(135deg, #0f172a, #1e293b, #0ea5e9);
 }
-Vorschau-Zeiten anpassen
-In index.html bei den <option>-Werten (in Millisekunden):
+```
 
+### Vorschau-Zeiten anpassen
 
-<option value="8000">😌 Sehr einfach (8s)</option>
-<option value="3000" selected>🙂 Normal (3s)</option>
-<option value="1000">😈 Hardcore (1s)</option>
+In `index.html` können bei den `<option>`-Werten die Vorschauzeiten angepasst werden.
+
+Die Werte werden in **Millisekunden** angegeben:
+
+```html
+<option value="8000">😌 Sehr einfach (8 s)</option>
+<option value="3000" selected>🙂 Normal (3 s)</option>
+<option value="1000">😈 Hardcore (1 s)</option>
+```
+
+---
 
 ## 💡 Ideen für Erweiterungen
-□ 🔊 Sound-Effekte – Flip, Match, Win (mit new Audio())
-□ 🏆 Highscore-Liste – Top 5 Zeiten im localStorage
-□ 👥 2-Spieler-Modus – Abwechselnd am selben Gerät
-□ 💡 Tipp-Button – Zeigt kurz 2 Karten (kostet 1 Fehler)
-□ 🌓 Dark/Light-Mode-Umschalter
-□ 🎨 Theme-Auswahl – Emojis, Tiere, Pokéball-Symbole
-□ 📊 Statistik-Seite – Beste Zeit, durchschnittliche Züge
-□ 🌐 Mehrsprachigkeit – Deutsch / Englisch
 
-##🙏 Danksagungen
+* [ ] 🔊 **Sound-Effekte** – Flip, Match, Win (mit `new Audio()`)
+* [ ] 🏆 **Highscore-Liste** – Top 5 Zeiten mit `localStorage`
+* [ ] 👥 **2-Spieler-Modus** – Abwechselnd am selben Gerät
+* [ ] 💡 **Tipp-Button** – Zeigt kurz 2 Karten (kostet 1 Fehler)
+* [ ] 🌓 **Dark-/Light-Mode-Umschalter**
+* [ ] 🎨 **Theme-Auswahl** – Emojis, Tiere, Pokéball-Symbole
+* [ ] 📊 **Statistik-Seite** – Beste Zeit, durchschnittliche Züge
+* [ ] 🌐 **Mehrsprachigkeit** – Deutsch / Englisch
 
-Inspiration: klassisches Memory / Concentration (seit 1959)
+---
 
-Design-Ideen: Glassmorphism-Trend, moderne Web-Apps
+## 🙏 Danksagungen
 
-Emojis: Unicode-Standard
+**Inspiration:** Klassisches Memory / Concentration (seit 1959)
 
-##👤 Autor
+**Design-Ideen:** Glassmorphism-Trend und moderne Web-Apps
+
+**Emojis:** Unicode-Standard
+
+---
+
+## 👤 Autor
 
 Erstellt mit ❤️ als modernes Beispiel für ein Browser-Memory-Spiel.
 
